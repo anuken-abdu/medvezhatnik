@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth theme-light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Medvezhatnik.kz | Аварийное вскрытие замков в Астане</title>
+  <meta name="description" content="Медвежатник Астана — аварийное вскрытие замков, дверей, авто и сейфов. Замена и установка замков. Круглосуточный выезд по Астане и области. Без повреждений." />
+  <meta name="theme-color" content="#dc2626" />
+
+  <!-- Fonts (Akrobat family — local) -->
+  <link rel="preload" href="fonts/Akrobat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Akrobat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Akrobat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Akrobat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Akrobat-Light.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Font Awesome (non-blocking) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+  <!-- Jost — for Kazakh language (non-blocking) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700;800;900&display=swap"></noscript>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS (non-blocking) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            head: ['"Akrobat"', '"Jost"', 'sans-serif'],
+            body: ['"Akrobat"', '"Jost"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @font-face{ font-family:"Akrobat"; src:url("fonts/Akrobat-Light.woff2") format("woff2"), url("fonts/Akrobat-Light.woff") format("woff"); font-weight:300; font-style:normal; font-display:swap; }
+    @font-face{ font-family:"Akrobat"; src:url("fonts/Akrobat-Regular.woff2") format("woff2"), url("fonts/Akrobat-Regular.woff") format("woff"); font-weight:400; font-style:normal; font-display:swap; }
+    @font-face{ font-family:"Akrobat"; src:url("fonts/Akrobat-SemiBold.woff2") format("woff2"), url("fonts/Akrobat-SemiBold.woff") format("woff"); font-weight:600; font-style:normal; font-display:swap; }
+    @font-face{ font-family:"Akrobat"; src:url("fonts/Akrobat-Bold.woff2") format("woff2"), url("fonts/Akrobat-Bold.woff") format("woff"); font-weight:700; font-style:normal; font-display:swap; }
+    @font-face{ font-family:"Akrobat"; src:url("fonts/Akrobat-ExtraBold.woff2") format("woff2"), url("fonts/Akrobat-ExtraBold.woff") format("woff"); font-weight:800; font-style:normal; font-display:swap; }
+    @font-face{ font-family:"Akrobat"; src:url("fonts/Akrobat-Black.woff2") format("woff2"), url("fonts/Akrobat-Black.woff") format("woff"); font-weight:900; font-style:normal; font-display:swap; }
+
+    /* ===== THEME TOKENS ===== */
+    :root, html.theme-light{
+      --bg:#f4f4f5;
+      --bg-soft:#eaeaec;
+      --text:#171717;
+      --text-strong:#0a0a0a;
+      --text-muted:#56565c;
+      --accent:#dc2626;
+      --accent-hover:#b91c1c;
+      --accent-soft:#ef4444;
+      --accent-contrast:#ffffff;
+      --card-bg:#ffffff;
+      --card-border:rgba(220,38,38,.20);
+      --card-border-hover:rgba(220,38,38,.55);
+      --nav-bg:rgba(244,244,245,.9);
+      --border-soft:rgba(0,0,0,.08);
+      --border-dash:rgba(0,0,0,.20);
+      --ghost-border:rgba(0,0,0,.22);
+      --price-line:rgba(0,0,0,.06);
+      --noise-op:0.035;
+    }
+    html.theme-dark{
+      --bg:#0d0d0d;
+      --bg-soft:#171717;
+      --text:#e8e8e8;
+      --text-strong:#ffffff;
+      --text-muted:#9a9aa2;
+      --accent:#ef4444;
+      --accent-hover:#dc2626;
+      --accent-soft:#f87171;
+      --accent-contrast:#ffffff;
+      --card-bg:rgba(255,255,255,.04);
+      --card-border:rgba(239,68,68,.28);
+      --card-border-hover:rgba(239,68,68,.6);
+      --nav-bg:rgba(13,13,13,.9);
+      --border-soft:rgba(255,255,255,.07);
+      --border-dash:rgba(255,255,255,.18);
+      --ghost-border:rgba(255,255,255,.26);
+      --price-line:rgba(255,255,255,.06);
+      --noise-op:0.05;
+    }
+
+    :root{ --nav-safe: 88px; }
+    body { background-color: var(--bg); color: var(--text); overflow-x: hidden; font-family:"Akrobat","Jost",sans-serif; font-weight:400; transition: background-color .35s ease, color .35s ease; }
+    section, footer { scroll-margin-top: var(--nav-safe); }
+
+    /* Color helpers driven by theme variables */
+    .bg-base{ background-color: var(--bg); }
+    .bg-soft{ background-color: var(--bg-soft); }
+    .t-main{ color: var(--text); }
+    .t-strong{ color: var(--text-strong); }
+    .t-muted{ color: var(--text-muted); }
+    .t-accent{ color: var(--accent); }
+    .card{ background: var(--card-bg); border:1px solid var(--card-border); transition: border-color .25s ease, background-color .35s ease; }
+    .card-h:hover{ border-color: var(--card-border-hover); }
+    .nav-bar{ background: var(--nav-bg); border-bottom:1px solid var(--border-soft); }
+    .grad-accent{ background-image: linear-gradient(to right, var(--accent), var(--accent-soft)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+
+    .btn-primary{ background: var(--accent); color: var(--accent-contrast); transition: background-color .25s ease, color .25s ease; }
+    .btn-primary:hover{ background: var(--accent-hover); }
+    .btn-ghost{ border:1px solid var(--ghost-border); color: var(--text); transition: border-color .25s ease, color .25s ease; }
+    .btn-ghost:hover{ border-color: var(--accent); color: var(--accent); }
+
+    /* When KZ language is active — use Jost as primary font */
+    html.lang-kz body,
+    html.lang-kz .font-head,
+    html.lang-kz .nav-link,
+    html.lang-kz .nav-link a,
+    html.lang-kz .body-text,
+    html.lang-kz .caption-text,
+    html.lang-kz .lang-btn,
+    html.lang-kz .lb-hint,
+    html.lang-kz [class*="font-head"] {
+      font-family: "Jost", "Akrobat", sans-serif !important;
+    }
+
+    /* Шум */
+    .noise-bg {
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E");
+      opacity: var(--noise-op);
+      pointer-events: none;
+      z-index: 50;
+      mix-blend-mode: multiply;
+    }
+    html.theme-dark .noise-bg{ mix-blend-mode: screen; }
+
+    /* Скошенные кнопки */
+    .clip-btn { clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%); transition: all 0.3s ease; }
+    .clip-btn:hover { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); padding-left: 2rem; }
+
+    /* Glitch */
+    .glitch-hover:hover { animation: glitch 0.3s cubic-bezier(.25,.46,.45,.94) both infinite; color: var(--accent); }
+    @keyframes glitch {
+      0% { transform: translate(0) }
+      20% { transform: translate(-2px, 2px) }
+      40% { transform: translate(-2px, -2px) }
+      60% { transform: translate(2px, 2px) }
+      80% { transform: translate(2px, -2px) }
+      100% { transform: translate(0) }
+    }
+
+    /* Mobile menu */
+    .menu-panel { opacity: 0; transform: translateY(-10px); pointer-events: none; transition: opacity .2s ease, transform .2s ease; }
+    .menu-panel.open { opacity: 1; transform: translateY(0); pointer-events: auto; }
+
+    .hero-shadow { text-shadow: 0 12px 28px rgba(0,0,0,.35); }
+    html.theme-dark .hero-shadow{ text-shadow: 0 12px 28px rgba(0,0,0,.65); }
+
+    /* Lightbox */
+    .lb-open { overflow: hidden; }
+    .lightbox {
+      position: fixed; inset: 0; z-index: 100;
+      background: rgba(0,0,0,.86);
+      display: none; align-items: center; justify-content: center;
+      padding: 18px;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img {
+      max-width: min(100%, 980px);
+      max-height: 86svh;
+      object-fit: contain;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      transition: transform .12s ease;
+      cursor: zoom-in;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+    .lightbox.zoomed img{ cursor: grab; }
+    .lightbox.zoomed img:active{ cursor: grabbing; }
+    .lightbox .lb-close {
+      position: absolute; top: 14px; right: 14px;
+      width: 44px; height: 44px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(0,0,0,.35);
+      color: #fff;
+      display: grid; place-items: center;
+      cursor: pointer;
+    }
+    .lb-hint{
+      position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%);
+      font-family:"Akrobat","Jost",sans-serif; font-weight:400; font-size:11px;
+      text-transform: uppercase; letter-spacing:.22em; color: rgba(255,255,255,.55);
+      background: rgba(0,0,0,.35); border:1px solid rgba(255,255,255,.12); padding:8px 10px;
+    }
+
+    @media (max-width: 360px){ .hero-title { font-size: 3.15rem !important; } }
+
+    .loc-card[aria-selected="true"]{ border-color: var(--card-border-hover) !important; }
+
+    /* Language toggle */
+    .lang-pill{ border:1px solid var(--border-soft); border-radius:999px; overflow:hidden; }
+    .lang-btn{
+      font-family:"Akrobat","Jost",sans-serif; font-weight:600; font-size:11px; letter-spacing:.22em;
+      text-transform: uppercase; padding:10px 12px; color: var(--text-muted); background: transparent; transition:.2s ease; line-height:1;
+    }
+    .lang-btn:hover{ color: var(--text); }
+    .lang-btn[aria-pressed="true"]{ background: var(--accent); color: var(--accent-contrast); }
+
+    /* Round icon buttons near hamburger */
+    .nav-social{
+      width:40px; height:40px; display:grid; place-items:center;
+      border:1px solid var(--border-soft); border-radius:999px; color: var(--text); transition:.2s ease;
+    }
+    .nav-social:hover{ border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
+
+    /* Typography helper classes for Akrobat weights */
+    .font-light{font-weight:300}.font-regular{font-weight:400}.font-semibold{font-weight:600}
+    .font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-black{font-weight:900}
+
+    .nav-link{ font-family:"Akrobat","Jost",sans-serif; font-weight:600; font-size:10px; text-transform:uppercase; letter-spacing:.12em; }
+    .body-text{ font-family:"Akrobat","Jost",sans-serif; font-weight:400; font-size:15px; line-height:1.65; }
+    .caption-text{ font-family:"Akrobat","Jost",sans-serif; font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.2em; }
+  </style>
+</head>
+
+<body class="antialiased">
+  <div class="noise-bg"></div>
+
+  <!-- NAV -->
+  <nav class="fixed w-full z-40 nav-bar backdrop-blur">
+    <div class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+      <a href="#top" class="flex items-center gap-3 min-w-0">
+        <div class="min-w-0">
+          <div class="font-head text-base sm:text-lg md:text-xl font-extrabold tracking-widest t-strong uppercase italic leading-none truncate">
+            Medvezhatnik
+          </div>
+          <div class="text-[8px] sm:text-[9px] md:text-[10px] font-semibold t-muted uppercase tracking-[0.18em] -mt-0.5 truncate" data-i18n="brand_sub">
+            Аварийное вскрытие замков
+          </div>
+        </div>
+      </a>
+
+      <div class="hidden md:flex gap-3 lg:gap-4 xl:gap-5 nav-link t-muted whitespace-nowrap">
+        <a href="#about" class="hover:t-accent transition" data-i18n="nav_about">О компании</a>
+        <a href="#method" class="hover:t-accent transition" data-i18n="nav_method">Услуги</a>
+        <a href="#mission" class="hover:t-accent transition" data-i18n="nav_mission">Миссия</a>
+        <a href="#rules" class="hover:t-accent transition" data-i18n="nav_rules">Гарантии</a>
+        <a href="#staff" class="hover:t-accent transition" data-i18n="nav_staff">Специалисты</a>
+        <a href="#gallery" class="hover:t-accent transition" data-i18n="nav_gallery">Галерея</a>
+        <a href="#merch" class="hover:t-accent transition" data-i18n="nav_merch">Оборудование</a>
+        <a href="#price" class="hover:t-accent transition" data-i18n="nav_price">Прайс</a>
+        <a href="#contact" class="hover:t-accent transition" data-i18n="nav_contact">Контакт</a>
+        <a href="#location" class="hover:t-accent transition" data-i18n="nav_location">Выезд</a>
+        <a href="#partners" class="hover:t-accent transition" data-i18n="nav_partners">Партнёры</a>
+      </div>
+
+      <!-- Desktop right -->
+      <div class="hidden md:flex items-center gap-3">
+        <button type="button" class="nav-social" data-theme-toggle aria-label="Сменить тему"><i class="fas fa-moon"></i></button>
+
+        <div class="lang-pill flex items-center">
+          <button type="button" class="lang-btn" data-set-lang="ru" aria-pressed="true">RU</button>
+          <button type="button" class="lang-btn" data-set-lang="kz" aria-pressed="false">KZ</button>
+        </div>
+
+        <a href="https://wa.me/77016528880?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20medvezhatnik.kz.%20%D0%9D%D1%83%D0%B6%D0%BD%D0%BE%20%D0%B2%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5%20%D0%B7%D0%B0%D0%BC%D0%BA%D0%B0%20%E2%80%94%20%D0%BF%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D0%B8%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%20%D0%B2%D1%8B%D0%B5%D0%B7%D0%B4%D0%B0." target="_blank" rel="noopener noreferrer" class="btn-primary font-head font-extrabold text-sm uppercase px-6 py-2 transition duration-300 transform -skew-x-12">
+          <span class="block skew-x-12" data-i18n="btn_call">Вызвать мастера</span>
+        </a>
+      </div>
+
+      <!-- Mobile right -->
+      <div class="md:hidden flex items-center gap-2">
+        <button type="button" class="nav-social" data-theme-toggle aria-label="Сменить тему"><i class="fas fa-moon"></i></button>
+
+        <a class="nav-social" href="https://wa.me/77016528880?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20medvezhatnik.kz." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <div class="lang-pill flex items-center">
+          <button type="button" class="lang-btn" data-set-lang="ru" aria-pressed="true">RU</button>
+          <button type="button" class="lang-btn" data-set-lang="kz" aria-pressed="false">KZ</button>
+        </div>
+
+        <button id="menuBtn" class="t-strong text-2xl ml-1" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="menu-panel md:hidden absolute left-0 right-0 top-full border-t bg-base/95 backdrop-blur" style="border-color:var(--border-soft)">
+      <div class="container mx-auto px-4 sm:px-6 py-4 flex flex-col gap-4 nav-link t-muted">
+        <a href="#about" class="hover:t-accent transition" data-i18n="nav_about">О компании</a>
+        <a href="#method" class="hover:t-accent transition" data-i18n="nav_method">Услуги</a>
+        <a href="#mission" class="hover:t-accent transition" data-i18n="nav_mission">Миссия</a>
+        <a href="#rules" class="hover:t-accent transition" data-i18n="nav_rules_full">Гарантии и условия</a>
+        <a href="#staff" class="hover:t-accent transition" data-i18n="nav_staff">Специалисты</a>
+        <a href="#gallery" class="hover:t-accent transition" data-i18n="nav_gallery">Галерея</a>
+        <a href="#merch" class="hover:t-accent transition" data-i18n="nav_merch">Оборудование</a>
+        <a href="#price" class="hover:t-accent transition" data-i18n="nav_price">Прайс</a>
+        <a href="#contact" class="hover:t-accent transition" data-i18n="nav_contact">Контакт</a>
+        <a href="#location" class="hover:t-accent transition" data-i18n="nav_location">Зона выезда</a>
+        <a href="#partners" class="hover:t-accent transition" data-i18n="nav_partners_full">Наши партнёры</a>
+
+        <a href="mailto:Zamkoff@list.ru?subject=%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20medvezhatnik.kz&body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9D%D1%83%D0%B6%D0%BD%D0%BE%20%D0%B2%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5%20%D0%B7%D0%B0%D0%BC%D0%BA%D0%B0.%0A%D0%90%D0%B4%D1%80%D0%B5%D1%81%3A%0A%D0%A3%D0%B4%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%20%D0%B2%D1%8B%D0%B5%D0%B7%D0%B4%D0%B0%3A%0A%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%BD%D1%8B%D0%B9%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%3A" class="mt-2 inline-flex items-center justify-center btn-primary font-head font-extrabold text-sm uppercase px-6 py-3 transition duration-300 transform -skew-x-12">
+          <span class="block skew-x-12" data-i18n="btn_email_full">Написать на почту</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" class="relative min-h-[100svh] flex items-center overflow-hidden bg-base">
+    <div class="absolute inset-0 z-0">
+      <video class="w-full h-full object-cover" autoplay muted loop playsinline preload="metadata" poster="images/hero_poster.jpg" aria-label="Фоновое видео">
+        <source src="images/hero.mp4" type="video/mp4">
+      </video>
+    </div>
+  </header>
+
+  <!-- 1. О компании -->
+  <section id="about" class="py-20 sm:py-24 bg-base">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="max-w-5xl mx-auto">
+
+        <div class="mb-10 sm:mb-12 hero-shadow" data-aos="fade-up">
+          <div class="card p-6 sm:p-8">
+            <p class="caption-text t-accent mb-3" data-i18n="hero_eyebrow">
+              КРУГЛОСУТОЧНО • АСТАНА И ОБЛАСТЬ
+            </p>
+
+            <div class="font-head text-4xl sm:text-5xl md:text-6xl t-strong font-extrabold uppercase leading-[0.9] mb-6 glitch-hover cursor-default" data-i18n="hero_title" data-i18n-html="true">
+              Закрыто? <br> Откроем.
+            </div>
+
+            <p class="body-text t-muted mb-6 max-w-2xl" data-i18n="hero_lead">
+              Аварийное вскрытие замков, дверей, авто и сейфов без повреждений. Приедем быстро — в любую точку Астаны и области.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+              <a href="https://wa.me/77016528880?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20medvezhatnik.kz.%20%D0%9D%D1%83%D0%B6%D0%BD%D0%BE%20%D0%B2%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5%20%D0%B7%D0%B0%D0%BC%D0%BA%D0%B0%20%E2%80%94%20%D0%BF%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D0%B8%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%20%D0%B2%D1%8B%D0%B5%D0%B7%D0%B4%D0%B0." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 btn-primary font-head font-extrabold text-lg uppercase px-10 py-4 clip-btn text-center">
+                <i class="fab fa-whatsapp"></i> <span data-i18n="hero_btn_wa">Написать в WhatsApp</span>
+              </a>
+              <a href="mailto:Zamkoff@list.ru?subject=%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20medvezhatnik.kz&body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9D%D1%83%D0%B6%D0%BD%D0%BE%20%D0%B2%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5%20%D0%B7%D0%B0%D0%BC%D0%BA%D0%B0.%0A%D0%90%D0%B4%D1%80%D0%B5%D1%81%3A%0A%D0%A3%D0%B4%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%20%D0%B2%D1%8B%D0%B5%D0%B7%D0%B4%D0%B0%3A%0A%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%BD%D1%8B%D0%B9%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%3A" class="inline-flex items-center justify-center gap-2 btn-ghost font-head font-bold text-lg uppercase px-8 py-4 text-center">
+                <i class="fas fa-envelope"></i> <span data-i18n="hero_btn_email">Написать на почту</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mb-12 sm:mb-14" data-aos="fade-up">
+          <h2 class="font-head text-4xl sm:text-5xl t-strong uppercase font-extrabold" data-i18n="about_title">О компании</h2>
+          <p class="font-semibold t-accent mt-2 text-lg">Medvezhatnik.kz</p>
+        </div>
+
+        <div class="grid md:grid-cols-1 gap-10 md:gap-12 items-start">
+          <div data-aos="fade-left" class="card p-6 sm:p-8">
+            <h3 class="font-head text-2xl t-strong uppercase mb-4 font-bold" data-i18n="about_aboutus_title">О нас</h3>
+            <p class="body-text t-muted" data-i18n="about_aboutus_text" data-i18n-html="true">
+              Medvezhatnik.kz — аварийная служба вскрытия замков в Астане. Мы открываем квартирные и офисные двери, автомобили и сейфы аккуратно, без повреждений и в большинстве случаев — без замены замка.<br><br>Работаем круглосуточно, без выходных и праздников. Дежурный мастер выезжает в любую точку города и области в течение 15–30 минут.<br><br>Используем профессиональный инструмент и проверенные методы, которые позволяют открыть замок быстро и безопасно для двери.<br><br>Стоимость работ называем заранее — без скрытых доплат. Работаем легально: вскрытие выполняется только при подтверждении прав на имущество.<br><br>Если нужно — сразу заменим личинку или установим новый замок прямо на месте. 🔑
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Услуги -->
+  <section id="method" class="py-20 sm:py-24 bg-soft">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-12 sm:mb-14" data-aos="fade-up">
+          <h2 class="font-head text-4xl sm:text-5xl t-strong uppercase font-extrabold" data-i18n="method_title">Услуги</h2>
+          <p class="font-semibold t-accent mt-2 text-lg" data-i18n="method_sub">Что мы делаем</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8">
+          <div class="card p-6 sm:p-8" data-aos="fade-up" data-aos-delay="0">
+            <p class="body-text t-muted mb-6" data-i18n="method_intro">Оказываем полный спектр услуг по аварийному вскрытию, замене и установке замков для квартир, офисов, автомобилей и сейфов.</p>
+            <ul class="space-y-5 body-text t-muted">
+              <li class="flex gap-3"><i class="fas fa-door-closed t-accent mt-1 shrink-0"></i><span data-i18n="method_b1" data-i18n-html="true"><b class="t-strong font-bold">Вскрытие дверных замков</b><br>Аккуратно открываем квартирные и офисные двери без повреждения двери и косяка.</span></li>
+              <li class="flex gap-3"><i class="fas fa-car t-accent mt-1 shrink-0"></i><span data-i18n="method_b2" data-i18n-html="true"><b class="t-strong font-bold">Вскрытие автомобилей</b><br>Открываем легковые и грузовые авто, не повреждая личинку и проводку.</span></li>
+              <li class="flex gap-3"><i class="fas fa-vault t-accent mt-1 shrink-0"></i><span data-i18n="method_b3" data-i18n-html="true"><b class="t-strong font-bold">Вскрытие сейфов</b><br>Профессиональное вскрытие сейфов любой сложности с сохранением содержимого.</span></li>
+              <li class="flex gap-3"><i class="fas fa-key t-accent mt-1 shrink-0"></i><span data-i18n="method_b4" data-i18n-html="true"><b class="t-strong font-bold">Замена и установка замков</b><br>Установим новый замок или заменим личинку прямо на месте после вскрытия.</span></li>
+              <li class="flex gap-3"><i class="fas fa-screwdriver-wrench t-accent mt-1 shrink-0"></i><span data-i18n="method_b5" data-i18n-html="true"><b class="t-strong font-bold">Ремонт и обслуживание</b><br>Ремонтируем замки, дверные ручки, доводчики и фурнитуру.</span></li>
+            </ul>
+          </div>
+
+          <div class="card p-6 sm:p-8" data-aos="fade-up" data-aos-delay="120">
+            <h3 class="font-head text-2xl t-strong uppercase mb-5 font-bold" data-i18n="method_why_title">Почему мы</h3>
+            <div class="body-text t-muted space-y-4" data-i18n="method_why_text" data-i18n-html="true">
+              <p>Приезжаем в течение 15–30 минут в любую точку Астаны.</p>
+              <p>Работаем круглосуточно — без выходных и праздников.</p>
+              <p>Открываем без повреждений в большинстве случаев.</p>
+              <p>Фиксированная цена, которую называем заранее, без скрытых доплат.</p>
+            </div>
+
+            <div class="mt-8 border-t pt-6" style="border-color:var(--border-soft)">
+              <div class="flex items-center gap-3 caption-text t-muted">
+                <i class="fas fa-shield-halved t-accent"></i>
+                <span data-i18n="method_result">Аккуратно и без вреда двери</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Наша миссия -->
+  <section id="mission" class="py-20 sm:py-24 bg-base">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12 sm:mb-14" data-aos="fade-up">
+          <h2 class="font-head text-4xl sm:text-5xl t-strong uppercase font-extrabold" data-i18n="mission_title">Наша миссия</h2>
+        </div>
+
+        <div class="grid lg:grid-cols-1 gap-8 items-start">
+          <div class="card p-6 sm:p-8" data-aos="fade-up" data-aos-delay="120">
+            <h3 class="font-head text-2xl t-strong uppercase mb-6 font-bold" data-i18n="mission_core_title">Основа работы</h3>
+            <div class="space-y-5">
+              <div class="flex gap-4">
+                <i class="fas fa-gem t-accent mt-1"></i>
+                <div>
+                  <div class="font-head text-lg t-strong uppercase font-bold" data-i18n="mission_v_title">Качество</div>
+                  <div class="body-text t-muted" data-i18n="mission_v_text">Аккуратное вскрытие без повреждений, профессиональный инструмент и проверенные методы работы.</div>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <i class="fas fa-bolt t-accent mt-1"></i>
+                <div>
+                  <div class="font-head text-lg t-strong uppercase font-bold" data-i18n="mission_s_title">Скорость</div>
+                  <div class="body-text t-muted" data-i18n="mission_s_text">Быстрый выезд и оперативное решение проблемы — круглосуточно, без выходных.</div>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <i class="fas fa-handshake t-accent mt-1"></i>
+                <div>
+                  <div class="font-head text-lg t-strong uppercase font-bold" data-i18n="mission_o_title">Доверие</div>
+                  <div class="body-text t-muted" data-i18n="mission_o_text">Прозрачные цены и честный подход к каждому клиенту — стоимость озвучиваем заранее.</div>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <i class="fas fa-user-shield t-accent mt-1"></i>
+                <div>
+                  <div class="font-head text-lg t-strong uppercase font-bold" data-i18n="mission_vv_title">Безопасность</div>
+                  <div class="body-text t-muted" data-i18n="mission_vv_text">Работаем легально — вскрытие только при подтверждении прав на имущество.</div>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <i class="fas fa-scale-balanced t-accent mt-1"></i>
+                <div>
+                  <div class="font-head text-lg t-strong uppercase font-bold" data-i18n="mission_p_title">Принципы</div>
+                  <div class="body-text t-muted" data-i18n="mission_p_text">Ответственность, конфиденциальность, уважение и надёжность в каждой заявке.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Гарантии -->
+  <section id="rules" class="py-20 sm:py-24 bg-soft">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12 sm:mb-14" data-aos="fade-up">
+        <h2 class="font-head text-4xl sm:text-5xl t-strong uppercase font-extrabold" data-i18n="rules_title">Гарантии</h2>
+        <p class="font-semibold t-accent mt-2 text-lg" data-i18n="rules_sub">Условия работы</p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="card p-6 sm:p-8" data-aos="fade-up" data-aos-delay="0">
+          <h3 class="font-head text-2xl t-strong uppercase mb-5 font-bold" data-i18n="rules_key_title">Ключевые пункты</h3>
+          <ul class="space-y-4 body-text t-muted">
+            <li class="flex gap-3"><i class="fas fa-shield-halved t-accent mt-1"></i><span data-i18n="rules_b1" data-i18n-html="true"><b class="t-strong font-bold">Без повреждений</b>: в большинстве случаев дверь и замок остаются целыми.</span></li>
+            <li class="flex gap-3"><i class="fas fa-id-card t-accent mt-1"></i><span data-i18n="rules_b2" data-i18n-html="true"><b class="t-strong font-bold">Легальность</b>: вскрытие только при подтверждении прав на имущество.</span></li>
+            <li class="flex gap-3"><i class="fas fa-tag t-accent mt-1"></i><span data-i18n="rules_b3" data-i18n-html="true"><b class="t-strong font-bold">Фиксированная цена</b>: стоимость озвучиваем до начала работ.</span></li>
+            <li class="flex gap-3"><i class="fas fa-user-lock t-accent mt-1"></i><span data-i18n="rules_b4" data-i18n-html="true"><b class="t-strong font-bold">Конфиденциальность</b>: не разглашаем информацию о клиентах.</span></li>
+          </ul>
+        </div>
+
+        <div class="card p-6 sm:p-8" data-aos="fade-up" data-aos-delay="120">
+          <h3 class="font-head text-2xl t-strong uppercase mb-5 font-bold" data-i18n="rules_pdf_title">Документ с условиями</h3>
+          <p class="body-text t-muted mb-6" data-i18n="rules_pdf_text">
+            Откройте или скачайте документ с условиями и гарантиями на услуги.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a id="rulesOpenPdf" href="Гарантии.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 btn-primary font-head font-extrabold uppercase px-8 py-4 clip-btn">
+              <i class="fas fa-file-pdf"></i> <span data-i18n="rules_open_pdf">Открыть PDF</span>
+            </a>
+            <a id="rulesDownloadPdf" href="Гарантии.pdf" download class="inline-flex items-center justify-center gap-2 btn-ghost font-head font-bold uppercase px-8 py-4">
+              <i class="fas fa-download"></i> <span data-i18n="rules_download">Скачать</span>
+            </a>
+          </div>
+
+          <div class="mt-8 border-t pt-6" style="border-color:var(--border-soft)">
+            <p class="caption-text t-muted" data-i18n="rules_file">Файл: Гарантии.pdf</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Специалисты -->
+  <section id="staff" class="py-20 sm:py-24 bg-base">
+    <div class="container mx-auto px-4 sm:px-6">
+      <h2 class="font-head text-4xl t-strong uppercase font-extrabold mb-10 sm:mb-12 border-l-4 pl-4" style="border-color:var(--accent)" data-i18n="staff_title">Наши специалисты</h2>
+
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
+        <div class="space-y-6" data-aos="fade-up">
+          <article class="card p-5 sm:p-6">
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-5 items-start">
+              <img src="images/coach-1.jpg" alt="Вскрытие дверных замков" class="w-full sm:w-32 aspect-square rounded-2xl object-cover js-lightbox cursor-zoom-in" loading="lazy">
+              <div class="min-w-0">
+                <div class="font-head text-2xl sm:text-3xl t-strong uppercase leading-tight font-extrabold">
+                  <span data-i18n="coach1_last">Дверные замки</span><br>
+                  <span class="t-accent" data-i18n="coach1_first">Квартиры и офисы</span>
+                </div>
+                <div class="mt-4 space-y-1.5 text-sm t-muted leading-snug">
+                  <div class="font-head text-base sm:text-lg t-strong uppercase font-bold" data-i18n="coach1_role">Вскрытие и замена</div>
+                  <div data-i18n="coach1_birth">Опыт работы — более 10 лет</div>
+                  <div data-i18n="coach1_cit">Без повреждения двери и косяка</div>
+                  <div data-i18n="coach1_place">Выезд 24/7 по Астане</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card p-5 sm:p-6">
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-5 items-start">
+              <img src="images/coach-2.jpg" alt="Вскрытие автомобилей" class="w-full sm:w-32 aspect-square rounded-2xl object-cover js-lightbox cursor-zoom-in" loading="lazy">
+              <div class="min-w-0">
+                <div class="font-head text-2xl sm:text-3xl t-strong uppercase leading-tight font-extrabold">
+                  <span data-i18n="coach2_last">Автозамки</span><br>
+                  <span class="t-accent" data-i18n="coach2_first">Легковые и грузовые</span>
+                </div>
+                <div class="mt-4 space-y-1.5 text-sm t-muted leading-snug">
+                  <div class="font-head text-base sm:text-lg t-strong uppercase font-bold" data-i18n="coach2_role">Аварийное вскрытие авто</div>
+                  <div data-i18n="coach2_birth">Без вреда личинке и проводке</div>
+                  <div data-i18n="coach2_cit">Современный профильный инструмент</div>
+                  <div data-i18n="coach2_place">Выезд по городу и трассе</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card p-5 sm:p-6">
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-5 items-start">
+              <img src="images/coach-3.jpg" alt="Вскрытие сейфов" class="w-full sm:w-32 aspect-square rounded-2xl object-cover js-lightbox cursor-zoom-in" loading="lazy">
+              <div class="min-w-0">
+                <div class="font-head text-2xl sm:text-3xl t-strong uppercase leading-tight font-extrabold">
+                  <span data-i18n="coach3_last">Сейфы</span><br>
+                  <span class="t-accent" data-i18n="coach3_first">Любой сложности</span>
+                </div>
+                <div class="mt-4 space-y-1.5 text-sm t-muted leading-snug">
+                  <div class="font-head text-base sm:text-lg t-strong uppercase font-bold" data-i18n="coach3_role">Вскрытие сейфов</div>
+                  <div data-i18n="coach3_birth">Сохраняем содержимое</div>
+                  <div data-i18n="coach3_cit">Опыт со всеми типами замков</div>
+                  <div data-i18n="coach3_place">Полная конфиденциальность</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div data-aos="fade-left">
+          <h3 class="font-head text-3xl md:text-5xl t-strong uppercase mb-6 font-extrabold" data-i18n="staff_h3" data-i18n-html="true">
+            Результат делает <span class="t-accent">опыт</span>
+          </h3>
+
+          <div class="t-muted text-[15px] leading-relaxed mb-8" data-i18n="staff_text" data-i18n-html="true">
+            <div class="space-y-2">
+              <div>В своей работе мастер использует</div>
+              <div>профессиональный инструмент и методы,</div>
+              <div>направленные на:</div>
+            </div>
+
+            <div class="mt-5 space-y-3">
+              <div class="flex items-start gap-3"><i class="fas fa-check t-accent mt-1"></i><span>быстрое и аккуратное вскрытие без повреждения двери;</span></div>
+              <div class="flex items-start gap-3"><i class="fas fa-check t-accent mt-1"></i><span>подбор способа под конкретный тип замка;</span></div>
+              <div class="flex items-start gap-3"><i class="fas fa-check t-accent mt-1"></i><span>сохранность имущества и содержимого;</span></div>
+              <div class="flex items-start gap-3"><i class="fas fa-check t-accent mt-1"></i><span>безопасность и конфиденциальность для клиента.</span></div>
+            </div>
+
+            <div class="mt-6 space-y-2">
+              <div>После вскрытия при необходимости</div>
+              <div>выполняем дополнительные работы:</div>
+            </div>
+
+            <div class="mt-5 space-y-3">
+              <div class="flex items-start gap-3"><i class="fas fa-check t-accent mt-1"></i><span>замена личинки или полная замена замка;</span></div>
+              <div class="flex items-start gap-3"><i class="fas fa-check t-accent mt-1"></i><span>ремонт фурнитуры, ручек и доводчиков.</span></div>
+            </div>
+          </div>
+
+          <div class="mt-10 flex flex-col sm:flex-row gap-3">
+            <a href="#price" class="inline-block btn-primary font-head font-extrabold text-lg uppercase px-10 py-4 clip-btn text-center" data-i18n="staff_btn_schedule">
+              Узнать стоимость
+            </a>
+            <a href="https://wa.me/77016528880?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20medvezhatnik.kz.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%2C%20%D0%BF%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0%2C%20%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8%20%D0%B8%20%D1%81%D1%80%D0%BE%D0%BA%D0%B8%20%D0%B2%D1%8B%D0%B5%D0%B7%D0%B4%D0%B0." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center btn-ghost font-head font-bold text-lg uppercase px-8 py-4 text-center" data-i18n="staff_btn_wa">
+              Написать в WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Галерея -->
+  <section id="gallery" class="py-20 sm:py-24 bg-soft">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12 sm:mb-14" data-aos="fade-up">
+        <h2 class="font-head text-4xl sm:text-5xl t-strong uppercase font-extrabold" data-i18n="gallery_title">Галерея</h2>
+        <p class="font-semibold t-accent mt-2 text-lg" data-i18n="gallery_sub">Наши работы и выезды</p>
+      </div>
+
+      <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5" data-aos="fade-up">
+        <img src="images/gallery-1.jpg" alt="Работа 1" class="w-full aspect-[4/3] object-cover js-lightbox cursor-zoom-in" loading="lazy">
+        <img src="images/gallery-2.jpg" alt="Работа 2" class="w-full aspect-[4/3] object-cover js-lightbox cursor-zoom-in" loading="lazy">
+        <img src="images/gallery-3.jpg" alt="Работа 3" class="w-full aspect-[4/3] object-cover js-lightbox cursor-zoom-in" loading="lazy">
+        <img src="images/gallery-4.jpg" alt="Работа 4" class="w-full aspect-[4/3] object-cover js-lightbox cursor-zoom-in" loading="lazy">
+        <img src="images/gallery-5.jpg" alt="Работа 5" class="w-full aspect-[4/3] object-cover js-lightbox cursor-zoom-in" loading="lazy">
+        <img src="images/gallery-6.jpg" alt="Работа 6" class="w-full aspect-[4/3] object-cover js-lightbox cursor-zoom-in" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Оборудование -->
+  <section id="merch" class="py-20 sm:py-24 bg-base">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12 sm:mb-14" data-aos="fade-up">
+        <h2 class="font-head text-4xl sm:text-5xl t-strong uppercase font-extrabold" data-i18n="merch_title">Оборудование</h2>
+        <p class="font-semibold t-accent mt-2 text-lg" data-i18n="merch_sub">Профессиональный инструмент</p>
+      </div>
+
+      <div class="max-w-5xl mx-auto grid lg:grid-cols-2 gap-8 items-start">
+        <div data-aos="fade-up" data-aos-delay="0">
+          <img src="images/kit-1.jpg" alt="Профессиональный инструмент" class="w-full max-h-[560px] object-cover js-lightbox cursor-zoom-in rounded-2xl" loading="lazy">
+          <p class="mt-3 caption-text t-muted" data-i18n="merch_caption">Профессиональный инструмент</p>
+        </div>
+
+        <div class="card p-6 sm:p-8" data-aos="fade-up" data-aos-delay="120">
+          <h3 class="font-head text-2xl t-strong uppercase mb-4 font-bold" data-i18n="merch_set_title">Инструмент мастера</h3>
+          <p class="body-text t-muted" data-i18n="merch_text">
+            Используем профессиональное оборудование, которое позволяет открыть замок быстро и без повреждений. Подробности по конкретной ситуации — в WhatsApp.
+          </p>
+
+          <div class="mt-8 flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/77016528880?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20medvezhatnik.kz.%20%D0%9D%D1%83%D0%B6%D0%BD%D0%BE%20%D0%B2%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5%20%D0%B7%D0%B0%D0%BC%D0%BA%D0%B0%20%E2%80%94%20%D0%BF%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D0%B8%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%20%D0%B2%D1%8B%D0%B5%D0%B7%D0%B4%D0%B0." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center btn-primary font-head font-extrabold uppercase px-8 py-4 clip-btn" data-i18n="merch_btn_stock">
+              Узнать стоимость
+            </a>
+            <a href="#price" class="inline-flex items-center justify-center btn-ghost font-head font-bold uppercase px-8 py-4" data-i18n="merch_btn_price">
+              Смотреть прайс
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Прайс -->
+  <section id="price" class="py-20 sm:py-24 bg-base relative">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-full hidden md:block" style="background:var(--price-line)"></div>
+
+    <div class="container mx-auto px-4 sm:px-6 relative z-10">
+      <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
+        <h2 class="font-head text-4xl sm:text-5xl t-strong uppercase font-extrabold" data-i18n="price_title">Прайс</h2>
+        <p class="font-semibold t-accent mt-2 text-lg" data-i18n="price_sub">Услуги и цены</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-x-16 lg:gap-x-20 gap-y-8 max-w-5xl mx-auto">
+        <!-- Вскрытие квартирной двери -->
+        <div class="flex justify-between items-start border-b border-dashed pb-3 group" style="border-color:var(--border-dash)" data-aos="fade-up" data-aos-delay="0">
+          <div class="pr-4">
+            <h4 class="font-head text-xl sm:text-2xl t-strong font-bold group-hover:t-accent transition" data-i18n="price_item1">Вскрытие квартирной двери</h4>
+            <p class="caption-text t-muted mt-1" data-i18n="price_days">Круглосуточно</p>
+          </div>
+          <span class="font-head text-xl sm:text-2xl t-strong font-bold whitespace-nowrap" data-i18n="price_p1">от 5 000 ₸</span>
+        </div>
+
+        <!-- Вскрытие автомобиля -->
+        <div class="flex justify-between items-start border-b border-dashed pb-3 group" style="border-color:var(--border-dash)" data-aos="fade-up" data-aos-delay="100">
+          <div class="pr-4">
+            <h4 class="font-head text-xl sm:text-2xl t-strong font-bold group-hover:t-accent transition" data-i18n="price_item2">Вскрытие автомобиля</h4>
+            <p class="caption-text t-muted mt-1" data-i18n="price_days">Круглосуточно</p>
+          </div>
+          <span class="font-head text-xl sm:text-2xl t-strong font-bold whitespace-nowrap" data-i18n="price_p2">от 7 000 ₸</span>
+        </div>
+
+        <!-- Вскрытие сейфов -->
+        <div class="flex justify-between items-start border-b border-dashed pb-3 group md:col-span-2" style="border-color:var(--border-dash)" data-aos="fade-up" data-aos-delay="200">
+          <div class="pr-4">
+            <h4 class="font-head text-xl sm:text-2xl t-strong font-bold group-hover:t-accent transition" data-i18n="price_item3">Вскрытие сейфов</h4>
+            <p class="caption-text t-muted mt-1" data-i18n="price_item3_desc">Сейфы любой сложности с сохранением содержимого. Цена зависит от типа замка.</p>
+          </div>
+          <span class="font-head text-xl sm:text-2xl t-strong font-bold whitespace-nowrap" data-i18n="price_p3">от 10 000 ₸</span>
+        </div>
+
+        <!-- Замена и установка замков -->
+        <div class="flex justify-between items-start border-b border-dashed pb-3 group md:col-span-2" style="border-color:var(--border-dash)" data-aos="fade-up" data-aos-delay="300">
+          <div class="pr-6">
+            <h4 class="font-head text-xl sm:text-2xl t-strong font-bold group-hover:t-accent transition" data-i18n="price_item4">Замена и установка замков</h4>
+            <p class="caption-text t-muted mt-1" data-i18n="price_item4_desc">Замена личинки или установка нового замка прямо на месте.</p>
+            <div class="mt-3 grid sm:grid-cols-2 gap-3">
+              <div class="card p-4">
+                <div class="font-head text-lg t-strong uppercase font-bold" data-i18n="price_12">Замена личинки</div>
+                <div class="text-sm t-muted mt-1" data-i18n="price_p12">от 4 000 ₸ + стоимость личинки</div>
+              </div>
+              <div class="card p-4">
+                <div class="font-head text-lg t-strong uppercase font-bold" data-i18n="price_8">Установка нового замка</div>
+                <div class="text-sm t-muted mt-1" data-i18n="price_p8">от 6 000 ₸ + стоимость замка</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <span class="font-head text-xl sm:text-2xl t-strong font-bold whitespace-nowrap">—</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center caption-text t-muted mt-10" data-i18n="price_note">Цены ориентировочные. Точную стоимость мастер называет до начала работ.</p>
+
+      <div class="text-center mt-8 sm:mt-10">
+        <a href="https://wa.me/77016528880?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20medvezhatnik.kz.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%2C%20%D0%BF%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0%2C%20%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8%20%D0%B8%20%D1%81%D1%80%D0%BE%D0%BA%D0%B8%20%D0%B2%D1%8B%D0%B5%D0%B7%D0%B4%D0%B0." target="_blank" rel="noopener noreferrer" class="inline-block btn-primary font-head font-extrabold uppercase px-8 py-3 transition duration-300" data-i18n="price_btn">
+          Вызвать мастера
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Контакт -->
+  <section id="contact" class="bg-soft border-t pt-16 sm:pt-20 pb-16" style="border-color:var(--border-soft)">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-2 gap-10 sm:gap-12 items-start md:items-center">
+        <div>
+          <h2 class="font-head text-4xl sm:text-5xl md:text-7xl t-strong uppercase font-extrabold leading-none mb-6" data-i18n="contact_title" data-i18n-html="true">
+            Срочное <br>
+            <span class="grad-accent">вскрытие замков</span>
+          </h2>
+
+          <div class="t-muted space-y-4 text-[15px]">
+            <p class="flex items-start gap-4">
+              <i class="fas fa-phone t-accent mt-1"></i>
+              <span data-i18n="contact_phone" data-i18n-html="true">
+                <b class="t-strong font-bold">Телефон:</b> <a class="hover:t-accent underline decoration-current/30" href="tel:+77016528880">+7 701 652 8880</a>
+              </span>
+            </p>
+
+            <p class="flex items-start gap-4">
+              <i class="fas fa-envelope t-accent mt-1"></i>
+              <span data-i18n="contact_email" data-i18n-html="true">
+                <b class="t-strong font-bold">Почта:</b> <a class="hover:t-accent underline decoration-current/30" href="mailto:Zamkoff@list.ru">Zamkoff@list.ru</a>
+              </span>
+            </p>
+
+            <p class="flex items-start gap-4">
+              <i class="fas fa-location-dot t-accent mt-1"></i>
+              <span data-i18n="contact_area" data-i18n-html="true">
+                <b class="t-strong font-bold">Выезд:</b> г. Астана и область
+              </span>
+            </p>
+
+            <p class="flex items-start gap-4">
+              <i class="fas fa-clock t-accent mt-1"></i>
+              <span data-i18n="contact_hours" data-i18n-html="true">
+                <b class="t-strong font-bold">Режим работы:</b> круглосуточно, без выходных
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div class="md:text-right flex md:justify-end gap-3 sm:gap-4">
+          <a href="https://wa.me/77016528880?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20medvezhatnik.kz." target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center justify-center w-20 h-20 btn-primary rounded-full text-3xl animate-bounce" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="tel:+77016528880" class="inline-flex items-center justify-center w-20 h-20 btn-ghost rounded-full text-2xl" aria-label="Позвонить">
+            <i class="fas fa-phone"></i>
+          </a>
+          <a href="mailto:Zamkoff@list.ru" class="inline-flex items-center justify-center w-20 h-20 btn-ghost rounded-full text-2xl" aria-label="Почта">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Зона выезда -->
+  <section id="location" class="py-20 sm:py-24 bg-base">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12 sm:mb-14" data-aos="fade-up">
+        <h2 class="font-head text-4xl sm:text-5xl t-strong uppercase font-extrabold" data-i18n="loc_title">Зона выезда</h2>
+        <p class="font-semibold t-accent mt-2 text-lg" data-i18n="loc_sub">Работаем по всей Астане и области</p>
+      </div>
+
+      <div class="max-w-3xl mx-auto" data-aos="fade-up">
+        <div class="card p-5 sm:p-8">
+          <div class="flex items-start justify-between gap-4 mb-6">
+            <div>
+              <h3 class="font-head text-2xl t-strong uppercase font-bold" data-i18n="loc_all_title">Районы города</h3>
+            </div>
+            <i class="fas fa-location-dot t-accent text-2xl mt-1"></i>
+          </div>
+
+          <div class="space-y-3">
+            <div class="loc-card block w-full text-left group card card-h p-4" aria-selected="true">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <div class="font-head text-lg t-strong uppercase font-bold group-hover:t-accent transition" data-i18n="loc_1">Есильский район</div>
+                  <div class="text-sm t-muted mt-1" data-i18n="loc_1_desc">Левобережье, центр</div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0 mt-1">
+                  <span class="caption-text t-muted hidden sm:inline" data-i18n="loc_time">15–30 мин</span>
+                  <i class="fas fa-clock t-accent"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="loc-card block w-full text-left group card card-h p-4">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <div class="font-head text-lg t-strong uppercase font-bold group-hover:t-accent transition" data-i18n="loc_2">Алматинский район</div>
+                  <div class="text-sm t-muted mt-1" data-i18n="loc_2_desc">Правый берег</div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0 mt-1">
+                  <span class="caption-text t-muted hidden sm:inline" data-i18n="loc_time">15–30 мин</span>
+                  <i class="fas fa-clock t-accent"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="loc-card block w-full text-left group card card-h p-4">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <div class="font-head text-lg t-strong uppercase font-bold group-hover:t-accent transition" data-i18n="loc_3">Сарыаркинский район</div>
+                  <div class="text-sm t-muted mt-1" data-i18n="loc_3_desc">Старый город</div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0 mt-1">
+                  <span class="caption-text t-muted hidden sm:inline" data-i18n="loc_time">15–30 мин</span>
+                  <i class="fas fa-clock t-accent"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="loc-card block w-full text-left group card card-h p-4">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <div class="font-head text-lg t-strong uppercase font-bold group-hover:t-accent transition" data-i18n="loc_4">Байконурский район</div>
+                  <div class="text-sm t-muted mt-1" data-i18n="loc_4_desc">и пригород</div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0 mt-1">
+                  <span class="caption-text t-muted hidden sm:inline" data-i18n="loc_time">15–30 мин</span>
+                  <i class="fas fa-clock t-accent"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="mt-6 caption-text t-muted" data-i18n="loc_hint_bottom">
+            Не нашли свой район? Позвоните — приедем в любую точку города и области.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Наши партнёры -->
+  <section id="partners" class="py-20 sm:py-24 bg-soft">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12 sm:mb-14" data-aos="fade-up">
+        <h2 class="font-head text-4xl sm:text-5xl t-strong uppercase font-extrabold" data-i18n="partners_title">Наши партнёры</h2>
+        <p class="font-semibold t-accent mt-2 text-lg" data-i18n="partners_sub">Надёжная поддержка</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-10 sm:gap-12 max-w-4xl mx-auto">
+        <a href="#" target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center justify-center py-2" aria-label="Партнёр 1">
+          <img src="images/zhenis.png" alt="Партнёр 1" class="max-h-24 w-full object-contain transition duration-300 group-hover:scale-[1.03] group-hover:opacity-90" loading="lazy">
+          <span class="mt-4 caption-text t-muted transition group-hover:t-accent" data-i18n="partners_open">Открыть сайт</span>
+        </a>
+
+        <a href="#" target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center justify-center py-2" aria-label="Партнёр 2">
+          <img src="images/tehpro.png" alt="Партнёр 2" class="max-h-24 w-full object-contain transition duration-300 group-hover:scale-[1.03] group-hover:opacity-90" loading="lazy">
+          <span class="mt-4 caption-text t-muted transition group-hover:t-accent" data-i18n="partners_open">Открыть сайт</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-soft border-t py-10" style="border-color:var(--border-soft)">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="flex items-center gap-3">
+          <p class="text-xs t-muted font-semibold tracking-wide">© 2026 MEDVEZHATNIK.KZ</p>
+        </div>
+
+        <a href="https://anuken.kz" target="_blank" rel="noopener noreferrer" class="text-xs t-muted hover:t-accent transition uppercase tracking-widest font-semibold flex items-center gap-2">
+          <i class="fas fa-code"></i> <span data-i18n="footer_dev">Разработка и продвижение - Anuken</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="toTop" class="hidden fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full btn-primary shadow-lg" aria-label="Наверх" type="button">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="Закрыть"><i class="fas fa-xmark"></i></button>
+    <img id="lbImg" src="" alt="Просмотр изображения">
+    <div class="lb-hint" data-i18n="lb_hint">Клик — увеличить • Тяни — двигать</div>
+  </div>
+
+  <script>
+    // Load AOS dynamically to prevent blocking
+    (function(){
+      var s = document.createElement('script');
+      s.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
+      s.async = true;
+      s.onload = function(){ AOS.init({ once: true, duration: 1000 }); };
+      s.onerror = function(){ console.warn('AOS failed to load'); };
+      document.body.appendChild(s);
+    })();
+  </script>
+  <script>
+    // ===== Theme toggle =====
+    function applyTheme(t){
+      const dark = t === 'dark';
+      document.documentElement.classList.toggle('theme-dark', dark);
+      document.documentElement.classList.toggle('theme-light', !dark);
+      document.querySelectorAll('[data-theme-toggle] i').forEach(i => {
+        i.className = dark ? 'fas fa-sun' : 'fas fa-moon';
+      });
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', dark ? '#0d0d0d' : '#dc2626');
+      try { localStorage.setItem('siteTheme', t); } catch(e){}
+    }
+    let savedTheme = 'light';
+    try { savedTheme = localStorage.getItem('siteTheme') || 'light'; } catch(e){}
+    if (savedTheme !== 'dark') savedTheme = 'light';
+    applyTheme(savedTheme);
+    document.querySelectorAll('[data-theme-toggle]').forEach(b => {
+      b.addEventListener('click', () => {
+        const next = document.documentElement.classList.contains('theme-dark') ? 'light' : 'dark';
+        applyTheme(next);
+      });
+    });
+
+    // Mobile menu
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    const hashLinks = menu ? menu.querySelectorAll('a[href^="#"]') : [];
+    function setExpanded(isOpen){ if (btn) btn.setAttribute('aria-expanded', String(isOpen)); }
+    if (btn && menu){
+      btn.addEventListener('click', () => {
+        const willOpen = !menu.classList.contains('open');
+        menu.classList.toggle('open');
+        setExpanded(willOpen);
+        btn.innerHTML = willOpen ? '<i class="fas fa-xmark"></i>' : '<i class="fas fa-bars"></i>';
+      });
+      hashLinks.forEach(a => a.addEventListener('click', () => {
+        menu.classList.remove('open'); setExpanded(false);
+        btn.innerHTML = '<i class="fas fa-bars"></i>';
+      }));
+    }
+
+    // Back to top
+    const toTop = document.getElementById('toTop');
+    window.addEventListener('scroll', () => {
+      if (!toTop) return;
+      if (window.scrollY > 420) toTop.classList.remove('hidden');
+      else toTop.classList.add('hidden');
+    });
+    if (toTop) toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Lightbox + Zoom
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lbImg');
+    const lbClose = document.getElementById('lbClose');
+    let zoom = 1, tx = 0, ty = 0, dragging = false, startX = 0, startY = 0, baseX = 0, baseY = 0;
+    function applyTransform(){ lbImg.style.transform = `translate(${tx}px, ${ty}px) scale(${zoom})`; }
+    function resetZoom(){ zoom = 1; tx = 0; ty = 0; lb.classList.remove('zoomed'); applyTransform(); }
+    function toggleZoom(){
+      if (zoom === 1){ zoom = 1.8; tx = 0; ty = 0; lb.classList.add('zoomed'); }
+      else { resetZoom(); }
+      applyTransform();
+    }
+    function openLightbox(src, alt){
+      lbImg.src = src; lbImg.alt = alt || 'Просмотр изображения';
+      lb.classList.add('open'); document.body.classList.add('lb-open');
+      lb.setAttribute('aria-hidden', 'false'); resetZoom();
+    }
+    function closeLightbox(){
+      lb.classList.remove('open'); lb.classList.remove('zoomed');
+      document.body.classList.remove('lb-open'); lb.setAttribute('aria-hidden', 'true');
+      resetZoom(); setTimeout(() => { lbImg.src = ''; }, 150);
+    }
+    document.querySelectorAll('.js-lightbox').forEach(img => {
+      img.addEventListener('click', () => openLightbox(img.currentSrc || img.src, img.alt));
+    });
+    lbClose.addEventListener('click', closeLightbox);
+    lb.addEventListener('click', (e) => { if (e.target === lb) closeLightbox(); });
+    lbImg.addEventListener('click', (e) => { e.stopPropagation(); toggleZoom(); });
+    lbImg.addEventListener('mousedown', (e) => {
+      if (zoom === 1) return; dragging = true; startX = e.clientX; startY = e.clientY; baseX = tx; baseY = ty; e.preventDefault();
+    });
+    window.addEventListener('mousemove', (e) => {
+      if (!dragging) return; tx = baseX + (e.clientX - startX); ty = baseY + (e.clientY - startY); applyTransform();
+    });
+    window.addEventListener('mouseup', () => { dragging = false; });
+    lbImg.addEventListener('touchstart', (e) => {
+      if (zoom === 1 || e.touches.length !== 1) return;
+      dragging = true; startX = e.touches[0].clientX; startY = e.touches[0].clientY; baseX = tx; baseY = ty;
+    }, { passive: true });
+    window.addEventListener('touchmove', (e) => {
+      if (!dragging || e.touches.length !== 1) return;
+      tx = baseX + (e.touches[0].clientX - startX); ty = baseY + (e.touches[0].clientY - startY); applyTransform();
+    }, { passive: true });
+    window.addEventListener('touchend', () => { dragging = false; });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && lb.classList.contains('open')) closeLightbox(); });
+
+    // ===== Language switch (RU/KZ) =====
+    const i18n = {
+      ru: {
+        brand_sub: "Аварийное вскрытие замков",
+
+        nav_about: "О компании",
+        nav_method: "Услуги",
+        nav_mission: "Миссия",
+        nav_rules: "Гарантии",
+        nav_rules_full: "Гарантии и условия",
+        nav_staff: "Специалисты",
+        nav_gallery: "Галерея",
+        nav_merch: "Оборудование",
+        nav_price: "Прайс",
+        nav_contact: "Контакт",
+        nav_location: "Выезд",
+        nav_partners: "Партнёры",
+        nav_partners_full: "Наши партнёры",
+
+        btn_call: "Вызвать мастера",
+        btn_email_full: "Написать на почту",
+
+        hero_eyebrow: "КРУГЛОСУТОЧНО • АСТАНА И ОБЛАСТЬ",
+        hero_title: "Закрыто? <br> Откроем.",
+        hero_lead: "Аварийное вскрытие замков, дверей, авто и сейфов без повреждений. Приедем быстро — в любую точку Астаны и области.",
+        hero_btn_wa: "Написать в WhatsApp",
+        hero_btn_email: "Написать на почту",
+
+        about_title: "О компании",
+        about_aboutus_title: "О нас",
+        about_aboutus_text:
+          "Medvezhatnik.kz — аварийная служба вскрытия замков в Астане. Мы открываем квартирные и офисные двери, автомобили и сейфы аккуратно, без повреждений и в большинстве случаев — без замены замка.<br><br>" +
+          "Работаем круглосуточно, без выходных и праздников. Дежурный мастер выезжает в любую точку города и области в течение 15–30 минут.<br><br>" +
+          "Используем профессиональный инструмент и проверенные методы, которые позволяют открыть замок быстро и безопасно для двери.<br><br>" +
+          "Стоимость работ называем заранее — без скрытых доплат. Работаем легально: вскрытие выполняется только при подтверждении прав на имущество.<br><br>" +
+          "Если нужно — сразу заменим личинку или установим новый замок прямо на месте. 🔑",
+
+        method_title: "Услуги",
+        method_sub: "Что мы делаем",
+        method_intro: "Оказываем полный спектр услуг по аварийному вскрытию, замене и установке замков для квартир, офисов, автомобилей и сейфов.",
+        method_b1: "<b class=\"t-strong font-bold\">Вскрытие дверных замков</b><br>Аккуратно открываем квартирные и офисные двери без повреждения двери и косяка.",
+        method_b2: "<b class=\"t-strong font-bold\">Вскрытие автомобилей</b><br>Открываем легковые и грузовые авто, не повреждая личинку и проводку.",
+        method_b3: "<b class=\"t-strong font-bold\">Вскрытие сейфов</b><br>Профессиональное вскрытие сейфов любой сложности с сохранением содержимого.",
+        method_b4: "<b class=\"t-strong font-bold\">Замена и установка замков</b><br>Установим новый замок или заменим личинку прямо на месте после вскрытия.",
+        method_b5: "<b class=\"t-strong font-bold\">Ремонт и обслуживание</b><br>Ремонтируем замки, дверные ручки, доводчики и фурнитуру.",
+        method_why_title: "Почему мы",
+        method_why_text:
+          "<p>Приезжаем в течение 15–30 минут в любую точку Астаны.</p>" +
+          "<p>Работаем круглосуточно — без выходных и праздников.</p>" +
+          "<p>Открываем без повреждений в большинстве случаев.</p>" +
+          "<p>Фиксированная цена, которую называем заранее, без скрытых доплат.</p>",
+        method_result: "Аккуратно и без вреда двери",
+
+        mission_title: "Наша миссия",
+        mission_core_title: "Основа работы",
+        mission_v_title: "Качество",
+        mission_v_text: "Аккуратное вскрытие без повреждений, профессиональный инструмент и проверенные методы работы.",
+        mission_s_title: "Скорость",
+        mission_s_text: "Быстрый выезд и оперативное решение проблемы — круглосуточно, без выходных.",
+        mission_o_title: "Доверие",
+        mission_o_text: "Прозрачные цены и честный подход к каждому клиенту — стоимость озвучиваем заранее.",
+        mission_vv_title: "Безопасность",
+        mission_vv_text: "Работаем легально — вскрытие только при подтверждении прав на имущество.",
+        mission_p_title: "Принципы",
+        mission_p_text: "Ответственность, конфиденциальность, уважение и надёжность в каждой заявке.",
+
+        rules_title: "Гарантии",
+        rules_sub: "Условия работы",
+        rules_key_title: "Ключевые пункты",
+        rules_b1: "<b class=\"t-strong font-bold\">Без повреждений</b>: в большинстве случаев дверь и замок остаются целыми.",
+        rules_b2: "<b class=\"t-strong font-bold\">Легальность</b>: вскрытие только при подтверждении прав на имущество.",
+        rules_b3: "<b class=\"t-strong font-bold\">Фиксированная цена</b>: стоимость озвучиваем до начала работ.",
+        rules_b4: "<b class=\"t-strong font-bold\">Конфиденциальность</b>: не разглашаем информацию о клиентах.",
+        rules_pdf_title: "Документ с условиями",
+        rules_pdf_text: "Откройте или скачайте документ с условиями и гарантиями на услуги.",
+        rules_open_pdf: "Открыть PDF",
+        rules_download: "Скачать",
+        rules_file: "Файл: Гарантии.pdf",
+
+        staff_title: "Наши специалисты",
+        staff_h3: "Результат делает <span class=\"t-accent\">опыт</span>",
+        staff_text:
+          "<div class=\"space-y-2\">" +
+            "<div>В своей работе мастер использует</div>" +
+            "<div>профессиональный инструмент и методы,</div>" +
+            "<div>направленные на:</div>" +
+          "</div>" +
+          "<div class=\"mt-5 space-y-3\">" +
+            "<div class=\"flex items-start gap-3\"><i class=\"fas fa-check t-accent mt-1\"></i><span>быстрое и аккуратное вскрытие без повреждения двери;</span></div>" +
+            "<div class=\"flex items-start gap-3\"><i class=\"fas fa-check t-accent mt-1\"></i><span>подбор способа под конкретный тип замка;</span></div>" +
+            "<div class=\"flex items-start gap-3\"><i class=\"fas fa-check t-accent mt-1\"></i><span>сохранность имущества и содержимого;</span></div>" +
+            "<div class=\"flex items-start gap-3\"><i class=\"fas fa-check t-accent mt-1\"></i><span>безопасность и конфиденциальность для клиента.</span></div>" +
+          "</div>" +
+          "<div class=\"mt-6 space-y-2\">" +
+            "<div>После вскрытия при необходимости</div>" +
+            "<div>выполняем дополнительные работы:</div>" +
+          "</div>" +
+          "<div class=\"mt-5 space-y-3\">" +
+            "<div class=\"flex items-start gap-3\"><i class=\"fas fa-check t-accent mt-1\"></i><span>замена личинки или полная замена замка;</span></div>" +
+            "<div class=\"flex items-start gap-3\"><i class=\"fas fa-check t-accent mt-1\"></i><span>ремонт фурнитуры, ручек и доводчиков.</span></div>" +
+          "</div>",
+        staff_btn_schedule: "Узнать стоимость",
+        staff_btn_wa: "Написать в WhatsApp",
+
+        coach1_last: "Дверные замки", coach1_first: "Квартиры и офисы", coach1_role: "Вскрытие и замена",
+        coach1_birth: "Опыт работы — более 10 лет", coach1_cit: "Без повреждения двери и косяка", coach1_place: "Выезд 24/7 по Астане",
+        coach2_last: "Автозамки", coach2_first: "Легковые и грузовые", coach2_role: "Аварийное вскрытие авто",
+        coach2_birth: "Без вреда личинке и проводке", coach2_cit: "Современный профильный инструмент", coach2_place: "Выезд по городу и трассе",
+        coach3_last: "Сейфы", coach3_first: "Любой сложности", coach3_role: "Вскрытие сейфов",
+        coach3_birth: "Сохраняем содержимое", coach3_cit: "Опыт со всеми типами замков", coach3_place: "Полная конфиденциальность",
+
+        merch_title: "Оборудование",
+        merch_sub: "Профессиональный инструмент",
+        merch_caption: "Профессиональный инструмент",
+        merch_set_title: "Инструмент мастера",
+        merch_text: "Используем профессиональное оборудование, которое позволяет открыть замок быстро и без повреждений. Подробности по конкретной ситуации — в WhatsApp.",
+        merch_btn_stock: "Узнать стоимость",
+        merch_btn_price: "Смотреть прайс",
+
+        gallery_title: "Галерея",
+        gallery_sub: "Наши работы и выезды",
+
+        price_title: "Прайс",
+        price_sub: "Услуги и цены",
+        price_item1: "Вскрытие квартирной двери", price_p1: "от 5 000 ₸",
+        price_item2: "Вскрытие автомобиля", price_p2: "от 7 000 ₸",
+        price_item3: "Вскрытие сейфов",
+        price_item3_desc: "Сейфы любой сложности с сохранением содержимого. Цена зависит от типа замка.", price_p3: "от 10 000 ₸",
+        price_item4: "Замена и установка замков",
+        price_item4_desc: "Замена личинки или установка нового замка прямо на месте.",
+        price_12: "Замена личинки", price_p12: "от 4 000 ₸ + стоимость личинки",
+        price_8: "Установка нового замка", price_p8: "от 6 000 ₸ + стоимость замка",
+        price_days: "Круглосуточно",
+        price_note: "Цены ориентировочные. Точную стоимость мастер называет до начала работ.",
+        price_btn: "Вызвать мастера",
+
+        contact_title: "Срочное <br><span class=\"grad-accent\">вскрытие замков</span>",
+        contact_phone: "<b class=\"t-strong font-bold\">Телефон:</b> <a class=\"hover:t-accent underline decoration-current/30\" href=\"tel:+77016528880\">+7 701 652 8880</a>",
+        contact_email: "<b class=\"t-strong font-bold\">Почта:</b> <a class=\"hover:t-accent underline decoration-current/30\" href=\"mailto:Zamkoff@list.ru\">Zamkoff@list.ru</a>",
+        contact_area: "<b class=\"t-strong font-bold\">Выезд:</b> г. Астана и область",
+        contact_hours: "<b class=\"t-strong font-bold\">Режим работы:</b> круглосуточно, без выходных",
+
+        loc_title: "Зона выезда",
+        loc_sub: "Работаем по всей Астане и области",
+        loc_all_title: "Районы города",
+        loc_time: "15–30 мин",
+        loc_1: "Есильский район", loc_1_desc: "Левобережье, центр",
+        loc_2: "Алматинский район", loc_2_desc: "Правый берег",
+        loc_3: "Сарыаркинский район", loc_3_desc: "Старый город",
+        loc_4: "Байконурский район", loc_4_desc: "и пригород",
+        loc_hint_bottom: "Не нашли свой район? Позвоните — приедем в любую точку города и области.",
+
+        partners_title: "Наши партнёры",
+        partners_sub: "Надёжная поддержка",
+        partners_open: "Открыть сайт",
+
+        footer_dev: "Разработка и продвижение - Anuken",
+        lb_hint: "Клик — увеличить • Тяни — двигать"
+      },
+
+      kz: {
+        brand_sub: "Құлыпты апаттық ашу",
+
+        nav_about: "Компания туралы",
+        nav_method: "Қызметтер",
+        nav_mission: "Миссия",
+        nav_rules: "Кепілдік",
+        nav_rules_full: "Кепілдік және шарттар",
+        nav_staff: "Мамандар",
+        nav_gallery: "Галерея",
+        nav_merch: "Жабдық",
+        nav_price: "Бағалар",
+        nav_contact: "Байланыс",
+        nav_location: "Шығу",
+        nav_partners: "Серіктестер",
+        nav_partners_full: "Біздің серіктестер",
+
+        btn_call: "Шебер шақыру",
+        btn_email_full: "Поштаға жазу",
+
+        hero_eyebrow: "ТӘУЛІК БОЙЫ • АСТАНА ЖӘНЕ ОБЛЫС",
+        hero_title: "Жабық па? <br> Ашамыз.",
+        hero_lead: "Құлыптарды, есіктерді, көліктер мен сейфтерді зақымдамай апаттық ашу. Астана мен облыстың кез келген нүктесіне жылдам жетеміз.",
+        hero_btn_wa: "WhatsApp-қа жазу",
+        hero_btn_email: "Поштаға жазу",
+
+        about_title: "Компания туралы",
+        about_aboutus_title: "Біз туралы",
+        about_aboutus_text:
+          "Medvezhatnik.kz — Астанадағы құлыпты апаттық ашу қызметі. Біз пәтер мен кеңсе есіктерін, көліктер мен сейфтерді ұқыпты, зақымдамай және көп жағдайда құлыпты ауыстырмай ашамыз.<br><br>" +
+          "Тәулік бойы, демалыс пен мерекесіз жұмыс істейміз. Кезекші шебер қала мен облыстың кез келген нүктесіне 15–30 минут ішінде шығады.<br><br>" +
+          "Құлыпты тез әрі есік үшін қауіпсіз ашуға мүмкіндік беретін кәсіби құрал мен тексерілген әдістерді қолданамыз.<br><br>" +
+          "Жұмыс құнын алдын ала айтамыз — жасырын қосымша төлемсіз. Заңды жұмыс істейміз: ашу тек мүлікке құқықты растаған жағдайда орындалады.<br><br>" +
+          "Қажет болса — орнында бірден өзекті ауыстырамыз немесе жаңа құлып орнатамыз. 🔑",
+
+        method_title: "Қызметтер",
+        method_sub: "Біз не істейміз",
+        method_intro: "Пәтер, кеңсе, көлік және сейфтер үшін құлыпты апаттық ашу, ауыстыру және орнату бойынша қызметтердің толық спектрін ұсынамыз.",
+        method_b1: "<b class=\"t-strong font-bold\">Есік құлыптарын ашу</b><br>Пәтер мен кеңсе есіктерін есік пен қораптысын зақымдамай ұқыпты ашамыз.",
+        method_b2: "<b class=\"t-strong font-bold\">Көліктерді ашу</b><br>Жеңіл және жүк көліктерін өзекті мен сымдарды зақымдамай ашамыз.",
+        method_b3: "<b class=\"t-strong font-bold\">Сейфтерді ашу</b><br>Кез келген күрделіктегі сейфтерді ішіндегі мүлікті сақтай отырып кәсіби ашу.",
+        method_b4: "<b class=\"t-strong font-bold\">Құлыпты ауыстыру және орнату</b><br>Ашқаннан кейін орнында жаңа құлып орнатамыз немесе өзекті ауыстырамыз.",
+        method_b5: "<b class=\"t-strong font-bold\">Жөндеу және қызмет көрсету</b><br>Құлыптарды, есік тұтқаларын, доводчиктер мен фурнитураны жөндейміз.",
+        method_why_title: "Неге біз",
+        method_why_text:
+          "<p>Астананың кез келген нүктесіне 15–30 минут ішінде жетеміз.</p>" +
+          "<p>Тәулік бойы — демалыс пен мерекесіз жұмыс істейміз.</p>" +
+          "<p>Көп жағдайда зақымсыз ашамыз.</p>" +
+          "<p>Алдын ала айтылатын тіркелген баға, жасырын төлемсіз.</p>",
+        method_result: "Ұқыпты әрі есікке зиянсыз",
+
+        mission_title: "Біздің миссия",
+        mission_core_title: "Жұмыс негізі",
+        mission_v_title: "Сапа",
+        mission_v_text: "Зақымсыз ұқыпты ашу, кәсіби құрал және тексерілген жұмыс әдістері.",
+        mission_s_title: "Жылдамдық",
+        mission_s_text: "Жылдам шығу және мәселені жедел шешу — тәулік бойы, демалыссыз.",
+        mission_o_title: "Сенім",
+        mission_o_text: "Ашық бағалар және әр клиентке адал көзқарас — құнын алдын ала айтамыз.",
+        mission_vv_title: "Қауіпсіздік",
+        mission_vv_text: "Заңды жұмыс істейміз — ашу тек мүлікке құқықты растаған жағдайда.",
+        mission_p_title: "Қағидалар",
+        mission_p_text: "Әр өтінімде жауапкершілік, құпиялылық, құрмет және сенімділік.",
+
+        rules_title: "Кепілдік",
+        rules_sub: "Жұмыс шарттары",
+        rules_key_title: "Негізгі тармақтар",
+        rules_b1: "<b class=\"t-strong font-bold\">Зақымсыз</b>: көп жағдайда есік пен құлып бүтін қалады.",
+        rules_b2: "<b class=\"t-strong font-bold\">Заңдылық</b>: ашу тек мүлікке құқықты растаған жағдайда.",
+        rules_b3: "<b class=\"t-strong font-bold\">Тіркелген баға</b>: құнын жұмыс басталғанға дейін айтамыз.",
+        rules_b4: "<b class=\"t-strong font-bold\">Құпиялылық</b>: клиенттер туралы ақпаратты жарияламаймыз.",
+        rules_pdf_title: "Шарттар құжаты",
+        rules_pdf_text: "Қызметке шарттар мен кепілдіктер құжатын ашыңыз немесе жүктеңіз.",
+        rules_open_pdf: "PDF ашу",
+        rules_download: "Жүктеу",
+        rules_file: "Файл: ГарантииKZ.pdf",
+
+        staff_title: "Біздің мамандар",
+        staff_h3: "Нәтижені <span class=\"t-accent\">тәжірибе</span> жасайды",
+        staff_text:
+          "<div class=\"space-y-2\">" +
+            "<div>Шебер өз жұмысында</div>" +
+            "<div>кәсіби құрал мен әдістерді қолданады,</div>" +
+            "<div>олар төмендегілерге бағытталған:</div>" +
+          "</div>" +
+          "<div class=\"mt-5 space-y-3\">" +
+            "<div class=\"flex items-start gap-3\"><i class=\"fas fa-check t-accent mt-1\"></i><span>есікті зақымдамай жылдам әрі ұқыпты ашу;</span></div>" +
+            "<div class=\"flex items-start gap-3\"><i class=\"fas fa-check t-accent mt-1\"></i><span>нақты құлып түріне сай әдісті таңдау;</span></div>" +
+            "<div class=\"flex items-start gap-3\"><i class=\"fas fa-check t-accent mt-1\"></i><span>мүлік пен ішіндегі заттың сақталуы;</span></div>" +
+            "<div class=\"flex items-start gap-3\"><i class=\"fas fa-check t-accent mt-1\"></i><span>клиент үшін қауіпсіздік пен құпиялылық.</span></div>" +
+          "</div>" +
+          "<div class=\"mt-6 space-y-2\">" +
+            "<div>Ашқаннан кейін қажет болса</div>" +
+            "<div>қосымша жұмыстарды орындаймыз:</div>" +
+          "</div>" +
+          "<div class=\"mt-5 space-y-3\">" +
+            "<div class=\"flex items-start gap-3\"><i class=\"fas fa-check t-accent mt-1\"></i><span>өзекті ауыстыру немесе құлыпты толық ауыстыру;</span></div>" +
+            "<div class=\"flex items-start gap-3\"><i class=\"fas fa-check t-accent mt-1\"></i><span>фурнитура, тұтқалар мен доводчиктерді жөндеу.</span></div>" +
+          "</div>",
+        staff_btn_schedule: "Бағасын білу",
+        staff_btn_wa: "WhatsApp-қа жазу",
+
+        coach1_last: "Есік құлыптары", coach1_first: "Пәтер мен кеңсе", coach1_role: "Ашу және ауыстыру",
+        coach1_birth: "Жұмыс тәжірибесі — 10 жылдан астам", coach1_cit: "Есік пен қораптысын зақымдамай", coach1_place: "Астана бойынша 24/7 шығу",
+        coach2_last: "Авто құлыптар", coach2_first: "Жеңіл және жүк", coach2_role: "Көлікті апаттық ашу",
+        coach2_birth: "Өзек пен сымға зиянсыз", coach2_cit: "Заманауи бейінді құрал", coach2_place: "Қала мен тас жол бойынша шығу",
+        coach3_last: "Сейфтер", coach3_first: "Кез келген күрделілік", coach3_role: "Сейфтерді ашу",
+        coach3_birth: "Ішіндегі затты сақтаймыз", coach3_cit: "Барлық құлып түрімен тәжірибе", coach3_place: "Толық құпиялылық",
+
+        merch_title: "Жабдық",
+        merch_sub: "Кәсіби құрал",
+        merch_caption: "Кәсіби құрал",
+        merch_set_title: "Шебер құралы",
+        merch_text: "Құлыпты тез әрі зақымсыз ашуға мүмкіндік беретін кәсіби жабдық қолданамыз. Нақты жағдай бойынша мәліметтер — WhatsApp арқылы.",
+        merch_btn_stock: "Бағасын білу",
+        merch_btn_price: "Бағаларды көру",
+
+        gallery_title: "Галерея",
+        gallery_sub: "Жұмыстарымыз және шығулар",
+
+        price_title: "Бағалар",
+        price_sub: "Қызметтер және бағалар",
+        price_item1: "Пәтер есігін ашу", price_p1: "5 000 ₸-ден",
+        price_item2: "Көлікті ашу", price_p2: "7 000 ₸-ден",
+        price_item3: "Сейфтерді ашу",
+        price_item3_desc: "Кез келген күрделіктегі сейфтер ішіндегі затты сақтай отырып. Баға құлып түріне байланысты.", price_p3: "10 000 ₸-ден",
+        price_item4: "Құлыпты ауыстыру және орнату",
+        price_item4_desc: "Орнында өзекті ауыстыру немесе жаңа құлып орнату.",
+        price_12: "Өзекті ауыстыру", price_p12: "4 000 ₸-ден + өзек құны",
+        price_8: "Жаңа құлып орнату", price_p8: "6 000 ₸-ден + құлып құны",
+        price_days: "Тәулік бойы",
+        price_note: "Бағалар шамамен берілген. Нақты құнды шебер жұмыс басталғанға дейін айтады.",
+        price_btn: "Шебер шақыру",
+
+        contact_title: "Құлыпты <br><span class=\"grad-accent\">шұғыл ашу</span>",
+        contact_phone: "<b class=\"t-strong font-bold\">Телефон:</b> <a class=\"hover:t-accent underline decoration-current/30\" href=\"tel:+77016528880\">+7 701 652 8880</a>",
+        contact_email: "<b class=\"t-strong font-bold\">Пошта:</b> <a class=\"hover:t-accent underline decoration-current/30\" href=\"mailto:Zamkoff@list.ru\">Zamkoff@list.ru</a>",
+        contact_area: "<b class=\"t-strong font-bold\">Шығу:</b> Астана қ. және облыс",
+        contact_hours: "<b class=\"t-strong font-bold\">Жұмыс режимі:</b> тәулік бойы, демалыссыз",
+
+        loc_title: "Шығу аймағы",
+        loc_sub: "Астана мен облыс бойынша жұмыс істейміз",
+        loc_all_title: "Қала аудандары",
+        loc_time: "15–30 мин",
+        loc_1: "Есіл ауданы", loc_1_desc: "Сол жағалау, орталық",
+        loc_2: "Алматы ауданы", loc_2_desc: "Оң жағалау",
+        loc_3: "Сарыарқа ауданы", loc_3_desc: "Ескі қала",
+        loc_4: "Байқоңыр ауданы", loc_4_desc: "және қала маңы",
+        loc_hint_bottom: "Ауданыңызды таппадыңыз ба? Қоңырау шалыңыз — қала мен облыстың кез келген нүктесіне жетеміз.",
+
+        partners_title: "Біздің серіктестер",
+        partners_sub: "Сенімді қолдау",
+        partners_open: "Сайтты ашу",
+
+        footer_dev: "Әзірлеу және жылжыту - Anuken",
+        lb_hint: "Басу — үлкейту • Тарт — жылжыту"
+      }
+    };
+
+    function applyLang(lang){
+      const isKz = lang === 'kz';
+      document.documentElement.setAttribute('lang', isKz ? 'kk' : 'ru');
+      document.documentElement.classList.toggle('lang-kz', isKz);
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        const val = i18n[lang] && i18n[lang][key];
+        if (typeof val === 'undefined') return;
+        if (el.dataset.i18nHtml === 'true') el.innerHTML = val;
+        else el.textContent = val;
+      });
+
+      document.querySelectorAll('[data-set-lang]').forEach(b => {
+        b.setAttribute('aria-pressed', String(b.dataset.setLang === lang));
+      });
+
+      const pdfFile = isKz ? 'ГарантииKZ.pdf' : 'Гарантии.pdf';
+      const openPdf = document.getElementById('rulesOpenPdf');
+      const dlPdf = document.getElementById('rulesDownloadPdf');
+      if (openPdf) openPdf.href = pdfFile;
+      if (dlPdf) dlPdf.href = pdfFile;
+
+      try { localStorage.setItem('siteLang', lang); } catch(e){}
+    }
+
+    let savedLang = 'ru';
+    try { savedLang = localStorage.getItem('siteLang') || 'ru'; } catch(e){}
+    if (!i18n[savedLang]) savedLang = 'ru';
+    applyLang(savedLang);
+
+    document.querySelectorAll('[data-set-lang]').forEach(b => {
+      b.addEventListener('click', () => applyLang(b.dataset.setLang));
+    });
+  </script>
+</body>
+</html>
